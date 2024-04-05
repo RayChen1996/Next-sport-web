@@ -1,0 +1,64 @@
+import React from "react";
+import Image from "next/image";
+import avator from "@/../../public/person.png";
+import people from "@/../../public/people.svg";
+import message from "@/../../public/message.svg";
+import good from "@/../../public/good.svg";
+
+export default function TrainingCard() {
+  return (
+    <div className="card w-96  rounded-md border-2">
+      <figure className=" relative ">
+        <Image
+          src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+          alt="Shoes"
+          height={170}
+          width={500}
+        />
+        <button className=" absolute bottom-6 w-11/12 btn btn-primary ">
+          立即參與
+        </button>
+      </figure>
+      <div className=" w-full   ">
+        <div className=" px-2 my-2 flex justify-between items-center">
+          <h2 className="card-title">
+            <Image className="rounded-full" src={avator} width={30} alt="" />
+            <span className=" text-black">Hank</span>
+
+            <div className="badge  bg-[#C7EFF9] text-black font-bold border-none rounded-md">
+              lv:2
+            </div>
+          </h2>
+          <span>2022-12-31 20:14</span>
+        </div>
+
+        <header className=" p-2">
+          <p className=" pb-2 text-2xl text-black font-bold">
+            登山：2022最後一天挑戰
+          </p>
+
+          <p className=" text-[#575F9E]"># 爬山 # 健康 # 交友</p>
+        </header>
+
+        <div className=" w-full h-[0.9] bg-black    "></div>
+
+        <div className=" border-t-2  ">
+          <ul className=" flex justify-between items-center h-10  mx-2   ">
+            <li className=" flex">
+              <Image alt="" src={people} />
+              12
+            </li>
+            <li className=" flex">
+              <Image alt="" src={message} />
+              12
+            </li>
+            <li className=" flex">
+              <Image alt="" src={good} />
+              12
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+}

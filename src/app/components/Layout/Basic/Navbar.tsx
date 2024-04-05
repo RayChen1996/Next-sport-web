@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import LogoPng from "@/../../public/logo.png";
+import Link from "next/link";
 export default function Navbar() {
   return (
-    <div className="navbar  bg-white ">
+    <div className="navbar  z-50 bg-white ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -59,7 +60,9 @@ export default function Navbar() {
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">
-          <Image alt="" src={LogoPng} width={150} height={50} />
+          <Link href={"/"}>
+            <Image alt="" src={LogoPng} width={150} height={50} />
+          </Link>
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -75,12 +78,12 @@ export default function Navbar() {
             <a>運動賽事</a>
           </li>
 
-          <li>
+          <li className="z-50">
             <details>
               <summary>我的運動</summary>
-              <ul className="p-2 w-40">
+              <ul className="p-2 w-40 bg-white">
                 <li>
-                  <a>每月進度提醒1</a>
+                  <a>每月進度提醒</a>
                 </li>
                 <li>
                   <a>設定當月目標</a>

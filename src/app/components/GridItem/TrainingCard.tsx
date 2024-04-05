@@ -5,16 +5,17 @@ import people from "@/../../public/people.svg";
 import message from "@/../../public/message.svg";
 import good from "@/../../public/good.svg";
 
+import Active01 from "@/../../public/最新活動01.png";
+import Active02 from "@/../../public/最新活動02.png";
+import Active03 from "@/../../public/最新活動03.png";
+import Active04 from "@/../../public/最新活動04.png";
+import Active05 from "@/../../public/最新活動05.png";
+
 export default function TrainingCard() {
   return (
     <div className="card w-96  rounded-md border-2">
       <figure className=" relative ">
-        <Image
-          src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-          alt="Shoes"
-          height={170}
-          width={500}
-        />
+        <Image src={Active01} alt="Shoes" height={170} width={500} />
         <button className=" absolute bottom-6 w-11/12 btn btn-primary ">
           立即參與
         </button>

@@ -1,6 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 運動揪團網
 
-## Getting Started
+設計稿 [連結](https://www.figma.com/file/UXOUGpNshhMmhqCcG8OSjI/%E9%81%8B%E5%8B%95%E6%8F%AA%E5%9C%98%E7%B6%B2%E7%AB%99?type=design&node-id=0%3A1&mode=design&t=dqlCGUesGUpYMSIK-1)
+
+瀏覽連結 [連結](https://next-sport-web.vercel.app/)
 
 First, run the development server:
 

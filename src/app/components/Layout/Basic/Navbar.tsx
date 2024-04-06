@@ -6,11 +6,9 @@ export default function Navbar() {
   return (
     <div className="navbar  z-10 bg-white ">
       <div className="navbar-start">
-        <a className="btn btn-ghost text-xl">
-          <Link href={"/"}>
-            <Image alt="" src={LogoPng} width={150} height={50} />
-          </Link>
-        </a>
+        <Link className="btn btn-ghost text-xl" href={"/"}>
+          <Image alt="" src={LogoPng} width={150} height={50} />
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">

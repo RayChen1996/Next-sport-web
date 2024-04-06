@@ -15,7 +15,7 @@ import Link from "next/link";
 export default function TrainingCard() {
   return (
     <Link href={"/Activities/123456789"}>
-      <div className="card w-96  rounded-md border-2">
+      <div className="card   rounded-md border-2">
         <figure className=" relative ">
           <Image src={Active01} alt="" height={170} width={500} />
           <button className=" absolute bottom-6 w-11/12 btn btn-primary ">

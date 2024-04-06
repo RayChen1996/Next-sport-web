@@ -10,7 +10,7 @@ import Active05 from "@/../../public/最新活動05.png";
 export default function Page() {
   return (
     <div className=" h-full px-5 md:flex md:justify-around container  ">
-      <div className="     ">
+      <div>
         <BreadCrumb />
         <DisplayProfile />
         <h1 className="text-black font-bold text-2xl">
@@ -59,7 +59,7 @@ export default function Page() {
       </div>
 
       <div className="  h-full ">
-        <h1 className=" text-black font-bold mb-2">瀏覽紀錄</h1>
+        <h1 className=" mt-5 text-black font-bold mb-2">瀏覽紀錄</h1>
         <div className="flex gap-2 border border-[#BDC0C2] p-3 rounded-md">
           <div>
             <Image className=" rounded-md" width={70} alt="" src={Active05} />

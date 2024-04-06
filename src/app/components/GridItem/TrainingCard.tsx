@@ -35,7 +35,7 @@ export default function TrainingCard() {
         <div className=" px-2 my-2 flex justify-between items-center">
           <h2 className="card-title">
             <Image className="rounded-full" src={avator} width={30} alt="" />
-            <span className=" text-black">Hank</span>
+            <span className=" text-black">Ray</span>
 
             <div className="badge  bg-[#C7EFF9] text-black font-bold border-none rounded-md">
               lv:2

@@ -20,7 +20,7 @@ export default function NewsActive() {
           <div className="  md:flex gap-2">
             <label className="w-10 hidden md:block">類別</label>
 
-            <ul className="w-full justify-around md:justify-start flex gap-2">
+            <ul className="w-full my-3 text-[#1E1E1E] cursor-pointer justify-around md:justify-start flex gap-2">
               <li>羽球</li>
               <li>健身</li>
               <li>爬山</li>

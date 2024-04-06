@@ -103,7 +103,7 @@ function ChatBoard() {
       <div className="flex justify-between">
         <div className=" flex gap-2 items-center">
           <Image className="rounded-full" src={avator} width={30} alt="" />
-          <span className=" text-black">Hank</span>
+          <span className=" text-black">Ray</span>
         </div>
         <div>2022-12-31 20:14</div>
       </div>
@@ -158,7 +158,7 @@ function DisplayProfile() {
   return (
     <h2 className="card-title mb-5">
       <Image className="rounded-full" src={avator} width={30} alt="" />
-      <span className=" text-black">Hank</span>
+      <span className=" text-black">Ray</span>
 
       <div className="badge  bg-[#C7EFF9] text-black font-bold border-none rounded-md">
         lv:2

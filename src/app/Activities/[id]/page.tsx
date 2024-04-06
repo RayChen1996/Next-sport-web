@@ -54,6 +54,8 @@ export default function Page() {
           </li>
         </ul>
         <ChatBoard />
+        <ChatBoard />
+        <ChatBoard />
         <FeedBack />
         <PostContent />
       </div>
@@ -97,8 +99,8 @@ function RecordItem() {
 
 function ChatBoard() {
   return (
-    <div className="">
-      <div className="flex w-full justify-between">
+    <div className="bg-[#FAFAFA] w-full p-5">
+      <div className="flex justify-between">
         <div className=" flex gap-2 items-center">
           <Image className="rounded-full" src={avator} width={30} alt="" />
           <span className=" text-black">Hank</span>
@@ -137,11 +139,11 @@ function FeedBack() {
 
 function PostContent() {
   return (
-    <div>
-      <div>
+    <div className=" w-full ">
+      <div className=" w-full">
         <textarea
           placeholder="請輸入內容"
-          className="textarea bg-white textarea-bordered textarea-lg w-full max-w-xs"
+          className=" w-full textarea bg-[#FAFAFA] textarea-bordered textarea-lg "
         ></textarea>
       </div>
 

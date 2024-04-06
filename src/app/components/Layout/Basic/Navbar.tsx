@@ -45,6 +45,11 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="navbar-end relative">
+        <div className="   gap-2 hidden md:flex">
+          <a className="btn btn-primary">註冊</a>
+          <a className="btn btn-outline">登入</a>
+        </div>
+
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg

@@ -5,22 +5,22 @@ export default function NewsActive() {
   const Data = [{}];
   return (
     <div className=" bg-white container w-4/5 ">
-      <div className=" h-fit   max-w-5xl m-auto ">
+      <div className=" h-fit    m-auto ">
         <h1 className=" text-2xl text-left font-bold">最新活動</h1>
-        <div className=" flex justify-between">
-          <div className=" flex gap-2 items-center ">
-            <label>地點</label>
-            <select className=" select bg-white border-[#B3B5E8] select-bordered">
+        <div className=" md:flex justify-between">
+          <div className=" md:flex gap-2 items-center ">
+            <label className="w-20 hidden md:block">地點</label>
+            <select className=" w-full select bg-white border-[#B3B5E8] select-bordered">
               <option>----</option>
               <option>台中市</option>
-              <option></option>
-              <option></option>
+              <option>台中市</option>
+              <option>台中市</option>
             </select>
           </div>
-          <div className=" flex gap-2">
-            <label>類別</label>
+          <div className="  md:flex gap-2">
+            <label className="w-10 hidden md:block">類別</label>
 
-            <ul className=" flex gap-2">
+            <ul className="w-full justify-around md:justify-start flex gap-2">
               <li>羽球</li>
               <li>健身</li>
               <li>爬山</li>

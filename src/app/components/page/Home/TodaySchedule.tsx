@@ -10,17 +10,17 @@ export default function TodaySchedule() {
           <li>配對組員</li>
         </ul>
       </div>
-      <div className="w-2/3  flex flex-col items-center justify-center">
+      <div className="w-2/3    flex flex-col items-center justify-center">
         <h1 className=" text-2xl py-2 text-black font-bold">預計今日運動</h1>
         <span>Time to work！</span>
         <div className="py-2 flex text-black font-bold w-1/2 items-center  justify-center gap-2 ">
-          <span className=" p-2 bg-[#BDC0C2]">0</span>
-          <span className="p-2 bg-[#BDC0C2]"> 5</span>
+          <span className="p-2 rounded-md bg-[#BDC0C2]">0</span>
+          <span className="p-2 rounded-md bg-[#BDC0C2]"> 5</span>
           <span>：</span>
-          <span className="p-2 bg-[#BDC0C2]">0</span>
-          <span className="p-2 bg-[#BDC0C2]">0</span>
+          <span className="p-2 rounded-md bg-[#BDC0C2]">0</span>
+          <span className="p-2 rounded-md bg-[#BDC0C2]">0</span>
         </div>
-        <div>
+        <div className=" w-full ">
           <button className="btn btn-primary  w-full ">設定</button>
         </div>
       </div>

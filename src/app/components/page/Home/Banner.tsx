@@ -24,7 +24,7 @@ export default function Banner() {
             </label>
           </div>
           <div className="w-full  ">
-            <button className="btn w-full btn-primary border-none text-[#1E1E1E] bg-[#B3B5E8]">
+            <button className="btn w-full md:w-1/3   btn-primary border-none text-[#1E1E1E] bg-[#B3B5E8]">
               立即開始運動
             </button>
           </div>

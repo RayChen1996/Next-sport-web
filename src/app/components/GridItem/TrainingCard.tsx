@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import avator from "@/../../public/person.png";
@@ -11,17 +12,24 @@ import Active03 from "@/../../public/最新活動03.png";
 import Active04 from "@/../../public/最新活動04.png";
 import Active05 from "@/../../public/最新活動05.png";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function TrainingCard() {
+  const { push } = useRouter();
   return (
-    <div className="card   rounded-md border-2">
+    <div className="card rounded-md border-2">
       <figure className=" relative ">
         <Image src={Active01} alt="" height={170} width={500} />
-        <Link href={"/Activities/123456789"}>
-          <button className=" absolute bottom-6 w-11/12 btn btn-primary ">
-            立即參與
-          </button>
-        </Link>
+
+        <button
+          type="button"
+          onClick={() => {
+            push("/Activities/123456789");
+          }}
+          className=" absolute bottom-6 w-11/12 btn btn-primary "
+        >
+          立即參與
+        </button>
       </figure>
       <div className=" w-full   ">
         <div className=" px-2 my-2 flex justify-between items-center">

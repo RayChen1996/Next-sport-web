@@ -60,27 +60,35 @@ export default function Page() {
 
       <div className="  h-full ">
         <h1 className=" mt-5 text-black font-bold mb-2">瀏覽紀錄</h1>
-        <div className="flex gap-2 border border-[#BDC0C2] p-3 rounded-md">
-          <div>
-            <Image className=" rounded-md" width={70} alt="" src={Active05} />
-          </div>
-          <div>
-            <div className=" text-[#8A8A8Bii]">2022-12-31 20:14</div>
-            <div className="text-[#1E1E1E] text-lg font-bold">
-              登山：2022最後一天挑戰
-            </div>
-            <div>
-              <ul className=" flex gap-2">
-                <li className=" text-[#575F9E] border-2 border-[#575F9E] p-1 rounded-md  ">
-                  15名
-                </li>
+        <RecordItem />
+        <RecordItem />
+        <RecordItem />
+      </div>
+    </div>
+  );
+}
 
-                <li className=" text-[#575F9E] border-2 border-[#575F9E] p-1 rounded-md ">
-                  適新手
-                </li>
-              </ul>
-            </div>
-          </div>
+function RecordItem() {
+  return (
+    <div className="flex mb-3 gap-2 border border-[#BDC0C2] p-3 rounded-md">
+      <div>
+        <Image className=" rounded-md" width={70} alt="" src={Active05} />
+      </div>
+      <div>
+        <div className=" text-[#8A8A8Bii]">2022-12-31 20:14</div>
+        <div className="text-[#1E1E1E] text-lg font-bold">
+          登山：2022最後一天挑戰
+        </div>
+        <div>
+          <ul className=" flex gap-2">
+            <li className=" text-[#575F9E] border-2 border-[#575F9E] p-1 rounded-md  ">
+              15名
+            </li>
+
+            <li className=" text-[#575F9E] border-2 border-[#575F9E] p-1 rounded-md ">
+              適新手
+            </li>
+          </ul>
         </div>
       </div>
     </div>

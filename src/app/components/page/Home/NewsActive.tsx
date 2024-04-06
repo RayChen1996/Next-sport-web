@@ -17,7 +17,7 @@ export default function NewsActive() {
               <option>台中市</option>
             </select>
           </div>
-          <div className="  md:flex gap-2">
+          <div className="  md:flex gap-2 items-center">
             <label className="w-10 hidden md:block">類別</label>
 
             <ul className="w-full my-3 text-[#1E1E1E] cursor-pointer justify-around md:justify-start flex gap-2">

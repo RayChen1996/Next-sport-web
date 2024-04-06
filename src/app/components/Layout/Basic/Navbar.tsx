@@ -4,7 +4,7 @@ import LogoPng from "@/../../public/logo.png";
 import Link from "next/link";
 export default function Navbar() {
   return (
-    <div className="navbar  z-10 bg-white ">
+    <div className=" container w-full md:w-2/3 navbar  z-10 bg-white ">
       <div className="navbar-start">
         <Link className="btn btn-ghost text-xl" href={"/"}>
           <Image alt="" src={LogoPng} width={150} height={50} />

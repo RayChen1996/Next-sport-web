@@ -11,20 +11,20 @@ export default function Banner() {
         <h1 className=" text-white font-bold text-3xl py-3">
           您，今天運動了嗎？
         </h1>
-        <div className=" w-full  md:flex gap-2 ">
-          <div className="w-full  ">
+        <div className=" w-full md:w-2/5  md:flex md:justify-between gap-1  ">
+          <div className="w-full  md:w-2/5">
             <label className="w-full flex input bg-white border-none   ">
               <Image src={SearchIcon} alt="" />
 
               <input
                 type="text"
-                placeholder="您在找人運動嗎"
-                className="border-none w-full"
+                placeholder="您在找人運動嗎？"
+                className="border-none w-full  "
               />
             </label>
           </div>
-          <div className="w-full  ">
-            <button className="btn w-full md:w-1/3   btn-primary border-none text-[#1E1E1E] bg-[#B3B5E8]">
+          <div className="w-full  md:w-3/5 md:mt-0 mt-3 ">
+            <button className="btn w-full md:w-1/2   btn-primary border-none text-[#1E1E1E] bg-[#B3B5E8]">
               立即開始運動
             </button>
           </div>

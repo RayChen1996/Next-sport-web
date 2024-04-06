@@ -163,12 +163,12 @@ function BreadCrumb() {
     <div className="text-sm breadcrumbs mb-5">
       <ul>
         <li>
-          <a>Home</a>
+          <a>首頁</a>
         </li>
         <li>
-          <a>Documents</a>
+          <a>最新活動</a>
         </li>
-        <li>Add Document</li>
+        <li>登山：2022最後一天挑戰台中大坑9號</li>
       </ul>
     </div>
   );

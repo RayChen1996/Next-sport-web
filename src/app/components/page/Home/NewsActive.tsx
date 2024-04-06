@@ -4,7 +4,7 @@ import TrainingCard from "../../GridItem/TrainingCard";
 export default function NewsActive() {
   const Data = [{}];
   return (
-    <div className=" bg-white container  ">
+    <div className=" bg-white container w-4/5 ">
       <div className=" h-fit   max-w-5xl m-auto ">
         <h1 className=" text-2xl text-left font-bold">最新活動</h1>
         <div className=" flex justify-between">
@@ -32,7 +32,7 @@ export default function NewsActive() {
       </div>
 
       <div className="flex flex-col justify-center items-center">
-        <div className=" grid gap-2  lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+        <div className=" grid gap-1 grid-cols-1 md:grid-cols-2  lg:grid-cols-3 ">
           <TrainingCard />
           <TrainingCard />
           <TrainingCard />

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function TodaySchedule() {
   return (
-    <div className=" w-full bg-white h-full flex min-w-md max-w-screen-xl m-auto">
+    <div className=" container p-5  w-4/5 bg-white h-full flex min-w-md max-w-screen-xl m-auto">
       <div className=" w-1/3 ">
         <ul className=" flex justify-center flex-col h-full gap-2">
           <li>每日任務</li>
@@ -21,7 +21,7 @@ export default function TodaySchedule() {
           <span className="p-2 bg-[#BDC0C2]">0</span>
         </div>
         <div>
-          <button className="btn btn-primary  w-80 ">設定</button>
+          <button className="btn btn-primary  w-full ">設定</button>
         </div>
       </div>
     </div>

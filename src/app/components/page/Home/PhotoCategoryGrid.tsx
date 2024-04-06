@@ -10,35 +10,39 @@ import RecommandImage7 from "@/../../public/推薦07.png";
 
 export default function PhotoCategoryGrid() {
   return (
-    <div className=" w-full  flex gap-2 justify-center items-center bg-white   ">
-      <div className=" h-full w-full md:w-1/3  sm:relative  ">
+    <div className=" h-full p-3 w-4/5 container md:grid-flow-col grid grid-cols-2 md:grid-cols-2 gap-2 relative">
+      <div className="col-span-2 md:col-span-3 col-start-1 relative">
         <Image
           src={RecommandImage}
           alt=""
-          className=" sm:w-full w-full h-full"
+          height={50}
+          className=" w-full h-full "
         />
+        <div className="text-white absolute bottom-2 left-3">台中市-游泳</div>
       </div>
-
-      <div className="  h-full grid grid-cols-3 gap-2 relative">
-        <div className="  sm:block col-span-1">
-          <Image src={RecommandImage2} alt="" width={240} />
-        </div>
-        <div className="  sm:block col-span-1">
-          <Image src={RecommandImage3} alt="" width={240} />
-        </div>
-        <div className="  sm:block col-span-1">
-          <Image src={RecommandImage4} alt="" width={240} />
-        </div>
-        <div className="  sm:block col-span-1">
-          <Image src={RecommandImage5} alt="" width={240} />
-        </div>
-        <div className="  sm:block col-span-1">
-          <Image src={RecommandImage6} alt="" width={240} />
-        </div>
-        <div className="  sm:block col-span-1">
-          <Image src={RecommandImage7} alt="" width={240} />
-        </div>
-        {/* <div className="hidden sm:block absolute bg-white h-full w-1/4 top-0 left-0"></div> */}
+      <div className="col-span-1 relative">
+        <Image src={RecommandImage2} alt="" width={240} />
+        <div className="text-white absolute bottom-2 left-3">台中市-游泳</div>
+      </div>
+      <div className="col-span-1 relative">
+        <Image src={RecommandImage3} alt="" width={240} />
+        <div className="text-white absolute bottom-2 left-3">台中市-游泳</div>
+      </div>
+      <div className="col-span-1 relative">
+        <Image src={RecommandImage4} alt="" width={240} />
+        <div className="text-white absolute bottom-2 left-3">台中市-游泳</div>
+      </div>
+      <div className="col-span-1 relative">
+        <Image src={RecommandImage5} alt="" width={240} />
+        <div className="text-white absolute bottom-2 left-3">台中市-游泳</div>
+      </div>
+      <div className="col-span-1 relative">
+        <Image src={RecommandImage6} alt="" width={240} />
+        <div className="text-white absolute bottom-2 left-3">台中市-游泳</div>
+      </div>
+      <div className="col-span-1 relative">
+        <Image src={RecommandImage7} alt="" width={240} />
+        <div className="text-white absolute bottom-2 left-3">台中市-游泳</div>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import LogoPng from "@/../../public/logo.png";
 import Link from "next/link";
 export default function Navbar() {
   return (
-    <div className=" container w-full md:w-2/3 navbar  z-10 bg-white ">
+    <div className="container navbar z-10 w-full bg-white md:w-2/3">
       <div className="navbar-start">
         <Link className="btn btn-ghost text-xl" href={"/"}>
           <Image alt="" src={LogoPng} width={150} height={50} />
@@ -26,7 +26,7 @@ export default function Navbar() {
           <li className="z-50">
             <details>
               <summary>我的運動</summary>
-              <ul className="p-2 w-40 bg-white">
+              <ul className="w-40 bg-white p-2">
                 <li>
                   <a>每月進度提醒</a>
                 </li>
@@ -45,7 +45,7 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="navbar-end relative">
-        <div className="   gap-2 hidden md:flex">
+        <div className="hidden gap-2 md:flex">
           <a className="btn btn-primary">註冊</a>
           <a className="btn btn-outline">登入</a>
         </div>
@@ -69,7 +69,7 @@ export default function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2  bg-white absolute right-2 rounded-box w-52"
+            className="menu dropdown-content menu-sm absolute right-2 z-[1] mt-3 w-52 rounded-box bg-white p-2"
           >
             <li>
               <a>最新活動</a>

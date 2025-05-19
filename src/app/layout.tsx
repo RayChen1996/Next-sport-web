@@ -5,7 +5,7 @@ import "./globals.css";
 import Navbar from "./components/Layout/Basic/Navbar";
 import Footer from "./components/Layout/Basic/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+import Providers from "@/utils/providers";
 
 export const metadata: Metadata = {
   title: "運動揪團網",
@@ -20,11 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
-
-        {children}
-
-        <Footer />
+        <Providers>
+          <Navbar />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

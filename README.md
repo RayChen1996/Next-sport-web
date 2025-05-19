@@ -4,35 +4,61 @@
 
 瀏覽連結 [連結](https://next-sport-web.vercel.app/)
 
-First, run the development server:
+```sql
+{
+  "members": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "email": "alice@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "email": "bob@example.com"
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "登山揪團",
+      "description": "一起去爬合歡山！",
+      "hostId": 1
+    },
+    {
+      "id": 2,
+      "title": "烘焙活動",
+      "description": "週末一起學做甜點～",
+      "hostId": 2
+    }
+  ],
+  "groupMembers": [
+    {
+      "id": 1,
+      "groupId": 1,
+      "memberId": 1,
+      "role": "host"
+    },
+    {
+      "id": 2,
+      "groupId": 1,
+      "memberId": 2,
+      "role": "participant"
+    },
+    {
+      "id": 3,
+      "groupId": 2,
+      "memberId": 2,
+      "role": "host"
+    }
+  ]
+}
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📘 結構說明
+members：會員基本資料。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+groups：揪團活動資料，其中 hostId 可直接關聯到發起人（members 表）。
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+groupMembers：中介表，描述哪位會員參加了哪個活動，並記錄其角色（如 host 或 participant）。
